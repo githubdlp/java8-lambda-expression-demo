@@ -9,6 +9,9 @@ public class DemoListElementPrint {
 		List<String> stringList = getStringList();
 		// lambda expression to print the list element
 		stringList.forEach(string -> System.out.println(string));
+		
+		// using scope resolution
+		stringList.forEach(System.out::println);
 	}
 
 	private static List<String> getStringList() {
